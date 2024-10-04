@@ -19,10 +19,19 @@ output contains any NO's in the PASS column, it is not correct.
 Example:
 ```
 Testing getDriverMessage:
-TEST CASES: YOURS PASS?
-Limit: 0 35 S peed: 0 20 = > SLOW SLOW YES
-Limit: 0 35 S peed: 0 30 = > GOOD SLOW NO
-Limit: 0 35 S peed: 0 35 = > GOOD GOOD YES
+TEST CASES:                    YOURS  PASS?
+Limit: 035 Speed: 020 => SLOW  SLOW   YES
+Limit: 035 Speed: 030 => GOOD  GOOD   YES
+Limit: 035 Speed: 035 => GOOD  GOOD   YES
+Limit: 035 Speed: 050 => FAST  FAST   YES
+Limit: 020 Speed: 050 => FAST  FAST   YES
+Limit: 020 Speed: 018 => GOOD  GOOD   YES
+Limit: 020 Speed: 005 => SLOW  SLOW   YES
+Limit: 020 Speed: 035 => FAST  FAST   YES
+Limit: 075 Speed: 060 => SLOW  SLOW   YES
+Limit: 075 Speed: 075 => GOOD  GOOD   YES
+Limit: 075 Speed: 080 => GOOD  GOOD   YES
+Limit: 075 Speed: 100 => FAST  FAST   YES
 ```
 
 ## Methods (all of this information is available in Decisions.java):
