@@ -28,6 +28,7 @@ Limit: 0 35 S peed: 0 35 = > GOOD GOOD YES
 ## Methods (all of this information is available in Decisions.java):
 
 ```java
+
 /**
 * Returns a message about a driver's speed status
 * If the driver is going more than 10% over the limit, return FAST
@@ -36,8 +37,12 @@ Limit: 0 35 S peed: 0 35 = > GOOD GOOD YES
 * @param limit the speed limit
 * @param speed the speed of the driver
 */
-public static String getDriverMessage(int limit, int speed)
-checkZip:
+public static String getDriverMessage(int limit, int speed) {
+    // TODO
+}
+    
+    
+
 /** Returns the Texas major metropolitan area represented by a specified
 zip
 * code, using the first two digits of the zip
@@ -50,8 +55,10 @@ zip
 * @param zipCode the zip code that is processed
 * @return the major metropolitan area that zip code represents
 */
-public static String checkZip(int zipCode)
-getGeneration
+public static String checkZip(int zipCode) {
+    // TODO
+}
+    
 /**
 * Returns the generation associated with a birth year
 * 1900 - 1924: Greatest Generation
@@ -64,8 +71,10 @@ getGeneration
 * @param birthYear the year of birth to check
 * @return the generation
 */
-public static String getGeneration(int birthYear)
-checkRoom:
+public static String getGeneration(int birthYear) {
+    // TODO
+}
+    
 /**
 * Returns the testing room assignment based on a student's last name
 * A - D : B260A
@@ -75,8 +84,10 @@ checkRoom:
 * @param lastName the student's last name
 * @return the room assignment
 */
-public static String checkRoom(String lastName)
-getWeightStatus:
+public static String checkRoom(String lastName){
+    // TODO
+}
+    
 /**
 * Returns a String descriptor of an adult's weight status based on their
 * body mass index:
@@ -87,5 +98,7 @@ getWeightStatus:
 * @param index the body mass index
 * @return a description of the weight status
 */
-public static String getWeightStatus(double index)
+public static String getWeightStatus(double index) {
+    // TODO
+}
 ```
