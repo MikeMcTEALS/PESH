@@ -1,8 +1,8 @@
 
 /*
- * Name:
- * Teacher:
- * Period:
+ * Name: Mike
+ * Teacher: Ward
+ * Period: ??
  */
 /**
  * A class for practicing using decisions structures in Java
@@ -128,7 +128,7 @@ public class Decisions {
             // Perform lexicographical (alphabetic) comparison for each range
             if (firstCharacters.compareTo("A") >= 0 && firstCharacters.compareTo("E") < 0)
                 return "B260A";
-            else if (firstCharacters.compareTo("E") >= 0 && firstCharacters.compareTo("MC") < 0)
+            else if (firstCharacters.compareTo("E") >= 0 && firstCharacters.compareTo("MA") <= 0)
                 return "B260B";
             else if (firstCharacters.compareTo("MC") >= 0 && firstCharacters.compareTo("SHAH") <= 0)
                 return "B262";
@@ -150,9 +150,19 @@ public class Decisions {
      * @param index the body mass index
      * @return a description of the weight status
      */
-
     public static String getWeightStatus(double index) {
-        return "";
-
+        // Do not accept a negative value for BMI/index
+        if (index >= 0.0) {
+            if (index < 18.5d)
+                return "underweight";
+            if (index <= 24.9d)
+                return "normal";
+            if (index <= 29.9)
+                return "overweight";
+            else
+                return "obese";
+        }
+        else
+            return "BMI must be a positive number";
     }
 }

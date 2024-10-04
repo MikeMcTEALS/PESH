@@ -63,7 +63,7 @@ class DecisionsTest {
             "Charlie, B260A",
             "Decker, B260A",
             "Edwards, B260B",
-            "Mbenga, B260B",
+            "Mbenga, UNKNOWN",
             "McIntyre, B262",
             "Shai, UNKNOWN",
             "Shannon, UNKNOWN",
@@ -74,7 +74,19 @@ class DecisionsTest {
         assertEquals(expResult, Decisions.checkRoom(lastName));
     }
 
-    @Test
-    void getWeightStatus() {
+    @ParameterizedTest
+    @DisplayName("Testing getWeightStatus")
+    @CsvSource({
+            "-1.0, BMI must be a positive number",
+            "12.0, underweight",
+            "18.5, normal",
+            "18.6, normal",
+            "24.9, normal",
+            "28.3, overweight",
+            "47.1, obese"
+    })
+    void getWeightStatus(double bmi, String expResult) {
+        System.out.println("Testing getWeightStatus");
+        assertEquals(expResult, Decisions.getWeightStatus(bmi));
     }
 }
