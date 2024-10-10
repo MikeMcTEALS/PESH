@@ -1,6 +1,7 @@
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 
 import java.util.Random;
@@ -10,6 +11,12 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
 class RockPaperScissorsTest {
+    private static Map<String, String> dictonary = new HashMap<>();
+
+    @BeforeAll
+    static void setUp() {
+        dictonary.put("R", "Paper");
+    }
 
     @Test
     void setPersonPlay() {
