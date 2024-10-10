@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.Random;
@@ -51,8 +50,6 @@ class RockPaperScissorsTest {
         System.out.println("Computer choice: " + game.getComputerPlay());
         System.out.println("Winner: " + game.getWinner());
         System.out.println();
-
-        game = null;
     }
 
     @RepeatedTest(20)
@@ -73,9 +70,6 @@ class RockPaperScissorsTest {
         System.out.println("Computer choice: " + game.getComputerPlay());
         System.out.println("Winner: " + game.getWinner());
         System.out.println();
-
-        game = null;
-
     }
 
     @RepeatedTest(20)
@@ -96,7 +90,6 @@ class RockPaperScissorsTest {
             case "S": assertEquals("TIE", game.getWinner());
                 break;
         }
-        game = null;
     }
 
     @Test

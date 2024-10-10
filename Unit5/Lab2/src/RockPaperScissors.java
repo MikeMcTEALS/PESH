@@ -1,7 +1,5 @@
 // Your heading here!
 
-import java.util.Random;
-
 /**
  * A game of Rock, Paper, Scissors that the user plays against a computer
  */
