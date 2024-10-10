@@ -48,10 +48,11 @@ There are three steps in creating the tester:
 
 Sample output (it will take many executions to fully test the program):
 
+```
 Play Rock Paper Scissors:
 Enter your play: R, P, or S ==> r
 Person play is R
 Computer play is S
 Rock crushes scissors - you win!
-
+```
 
