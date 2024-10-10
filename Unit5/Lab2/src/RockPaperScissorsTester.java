@@ -14,10 +14,6 @@ public class RockPaperScissorsTester
      */
     public static void main(String[] args)
     {
-        /**
-         * Tests methods of the RockPaperScissors class
-         * @param args not used
-         */
         System.out.println("Play Rock Paper Scissors:");
 
         Scanner scanner = new Scanner(System.in);
