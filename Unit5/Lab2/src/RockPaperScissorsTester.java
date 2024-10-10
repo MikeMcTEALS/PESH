@@ -8,10 +8,6 @@ import java.util.Scanner;
  */
 public class RockPaperScissorsTester
 {
-    /**
-     * Tests methods of the RockPaperScissors class
-     * @param args not used
-     */
     public static void main(String[] args)
     {
         System.out.println("Play Rock Paper Scissors:");
